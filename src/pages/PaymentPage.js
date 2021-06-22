@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSubscriptionDetails, getAPIProperty } from "../redux/slices/apiSlice";
 import Stepper from "../components/Stepper";
-
+import Loader from "../components/Loader";
 
 const PaymentPage = () => {
   const dispatch = useDispatch();
@@ -23,10 +23,5 @@ const PaymentPage = () => {
     </div>
   )
 };
-const Loader = () => (
-  <div style={{ textAlign: 'center' }}>
-    Loading.....
-  </div>
-);
 
 export default PaymentPage;

@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import SubscriptionParameters from './SubscriptionParameters';
 import CreditCard from './CreditCard';
 import Confirmation from './Confirmation';
-import Total from './Total';
+import OrderDetail from './OrderDetail';
 import isEmail from 'validator/lib/isEmail';
 
 import { getCreditCardProperty, resetCreditCardData } from "../redux/slices/creditCardSlice";
@@ -104,7 +104,7 @@ export default function HorizontalLabelPositionBelowStepper() {
         ) : (
           <div>
             <div>{getStepContent(activeStep)}</div>
-            <div><Total /></div>
+            <div><OrderDetail /></div>
             <div>
               <Button
                 disabled={activeStep === 0}

@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { getProperty } from "../redux/slices/subscriptionSlice";
 
-const Total = () => {
+const OrderDetail = () => {
   const duration = useSelector((state) => getProperty(state, "duration"));
   const storage = useSelector((state) => getProperty(state, "storage"));
   const pricePerGB = useSelector((state) => getProperty(state, "pricePerGB"));
@@ -31,4 +31,4 @@ const Total = () => {
   );
 };
 
-export default Total;
+export default OrderDetail;
